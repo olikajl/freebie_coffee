@@ -1,1 +1,114 @@
-/* No CSS *//*# sourceMappingURL=slyle.css.map */
+@charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 300;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: 1400px;
+  margin: auto;
+}
+
+/* Стили для главного экрана */
+.hero {
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #F9FBFF), color-stop(50%, #415167));
+  background: linear-gradient(to right, #F9FBFF 50%, #415167 50%);
+}
+
+.hero-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  background: #F9FBFF;
+}
+
+.hero-text {
+  padding-top: 76px;
+}
+
+.hero-text__logo {
+  margin: 0 140px 656px 187px;
+}
+
+.hero-text__title {
+  position: absolute;
+  left: 195px;
+  top: 504px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 54px;
+  line-height: 70px;
+  color: #415167;
+  text-transform: uppercase;
+}
+
+.hero-text__title span {
+  display: block;
+  color: #F9FBFF;
+  background-color: #C7A17A;
+  padding: 0 15px;
+  margin-left: -15px;
+}
+
+.hero-video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  background-image: url(../../img/hero/design-your-coffee-bag.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-menu {
+  padding: 77px 0 0 57px;
+  background-color: #415167;
+}
+
+.hero-menu__cart {
+  margin-bottom: 120px;
+}
+
+.hero-menu__nav ul {
+  padding-left: 0;
+}
+
+.hero-menu__link {
+  min-width: 150px;
+  list-style-type: none;
+  margin-bottom: 30px;
+}
+
+.hero-menu__link a {
+  font-size: 16px;
+  color: #EDF0F5;
+  text-decoration: none;
+}
+
+.hero-menu__link a:hover {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  font-size: 17px;
+}
+/*# sourceMappingURL=slyle.css.map */
