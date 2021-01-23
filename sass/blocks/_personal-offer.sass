@@ -1,0 +1,48 @@
+.personal-offer
+  position: relative
+  background-color: #F9FBFF
+  z-index: 2
+  &:after
+    content: ''
+    width: 34%
+    height: 100%
+    background-color: $primary-color
+    position: absolute
+    right: 0
+    top: 0
+    z-index: -1
+  &-block
+    max-width: 1273px
+    margin-left: auto
+  &__subtitle
+    margin-bottom: 64px
+  &__card
+    max-width: 360px
+    background-color: #ffffff    
+  &__image
+    margin-bottom: 42px
+    img
+      display: block
+  &__price
+    margin: 0 0 10px 42px
+  &__past-price
+    font-size: 14px
+    color: $primary-color
+    text-decoration-line: line-through
+    margin-left: 20px
+  &__titlecard
+    margin: 0 0 10px 42px
+  &__description
+    margin: 0 42px 32px 42px
+  &__button
+    padding: 5px 20px
+    margin: 0 54px 42px 42px
+  &-dimming
+    position: absolute
+    top: 0
+    right: 0
+    z-index: 2
+    width: 103px
+    height: 100%
+    background-color: #EDF0F5
+    opacity: .5

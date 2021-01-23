@@ -525,4 +525,85 @@ img {
   opacity: 1;
   background-color: #ffffff;
 }
+
+.gift-set-tabheader__item:hover {
+  opacity: 1;
+  background-color: #ffffff;
+}
+
+/* Стили для personal-offer */
+.personal-offer {
+  position: relative;
+  background-color: #F9FBFF;
+  z-index: 2;
+}
+
+.personal-offer:after {
+  content: '';
+  width: 34%;
+  height: 100%;
+  background-color: #415167;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.personal-offer-block {
+  max-width: 1273px;
+  margin-left: auto;
+}
+
+.personal-offer__subtitle {
+  margin-bottom: 64px;
+}
+
+.personal-offer__card {
+  max-width: 360px;
+  background-color: #ffffff;
+}
+
+.personal-offer__image {
+  margin-bottom: 42px;
+}
+
+.personal-offer__image img {
+  display: block;
+}
+
+.personal-offer__price {
+  margin: 0 0 10px 42px;
+}
+
+.personal-offer__past-price {
+  font-size: 14px;
+  color: #415167;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+  margin-left: 20px;
+}
+
+.personal-offer__titlecard {
+  margin: 0 0 10px 42px;
+}
+
+.personal-offer__description {
+  margin: 0 42px 32px 42px;
+}
+
+.personal-offer__button {
+  padding: 5px 20px;
+  margin: 0 54px 42px 42px;
+}
+
+.personal-offer-dimming {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  width: 103px;
+  height: 100%;
+  background-color: #EDF0F5;
+  opacity: .5;
+}
 /*# sourceMappingURL=slyle.css.map */
