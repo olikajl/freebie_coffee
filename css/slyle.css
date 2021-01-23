@@ -375,4 +375,154 @@ img {
   z-index: 10;
   cursor: pointer;
 }
+
+/* Стили для gift-set */
+.gift-set {
+  position: relative;
+  background-color: #EDF0F5;
+  z-index: 2;
+}
+
+.gift-set:after {
+  content: '';
+  width: 34%;
+  height: 100%;
+  background-color: #F9FBFF;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.gift-set__subtitle {
+  margin-bottom: 66px;
+}
+
+.gift-set-tabcontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1138px;
+  margin: 0 0 0 130px;
+}
+
+.gift-set-tabcontent {
+  background-color: #ffffff;
+  -webkit-box-shadow: 1px 0px 10px rgba(205, 205, 205, 0.5);
+          box-shadow: 1px 0px 10px rgba(205, 205, 205, 0.5);
+  padding: 53px 0 0 0;
+  z-index: 2;
+}
+
+.gift-set-tabcontent:after {
+  content: '';
+  width: 38%;
+  height: 100%;
+  background-color: #EDF0F5;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.gift-set__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.gift-set__text {
+  padding: 17px 68px 0 92px;
+}
+
+.gift-set__price {
+  margin-bottom: 12px;
+}
+
+.gift-set__titletab {
+  margin-bottom: 12px;
+}
+
+.gift-set__description {
+  max-width: 430px;
+  line-height: 22px;
+  margin-bottom: 24px;
+}
+
+.gift-set-wrapp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 46px;
+}
+
+.gift-set-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 22px;
+}
+
+.gift-set-block__img {
+  margin-right: 20px;
+}
+
+.gift-set-block__subtitle {
+  display: block;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+}
+
+.gift-set__button {
+  padding: 7px 34px;
+  margin: 0 124px 0 0px;
+}
+
+.gift-set-tabheader {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.gift-set-tabheader__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.gift-set-tabheader__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 30px;
+  color: #415167;
+  opacity: 0.3;
+  width: 100%;
+  height: 100%;
+  background: #EDF0F5;
+}
+
+.gift-set-tabheader__item_active {
+  opacity: 1;
+  background-color: #ffffff;
+}
 /*# sourceMappingURL=slyle.css.map */

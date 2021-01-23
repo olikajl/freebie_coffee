@@ -1,0 +1,81 @@
+.gift-set
+  position: relative
+  background-color: $light-gray
+  z-index: 2
+  &:after
+    content: ''
+    width: 34%
+    height: 100%
+    background-color: #F9FBFF
+    position: absolute
+    right: 0
+    top: 0
+    z-index: -1
+  &__subtitle
+    margin-bottom: 66px
+  &-tabcontainer
+    display: flex
+    max-width: 1138px
+    margin: 0 0 0 130px
+  &-tabcontent
+    background-color: #ffffff
+    box-shadow: 1px 0px 10px rgba(205, 205, 205, 0.5)
+    padding: 53px 0 0 0
+    z-index: 2
+    &:after
+      content: ''
+      width: 38%
+      height: 100%
+      background-color: $light-gray
+      position: absolute
+      left: 0
+      top: 0
+      z-index: -1
+  &__card
+    display: flex
+  &__text
+    padding: 17px 68px 0 92px
+  &__price
+    margin-bottom: 12px
+  &__titletab
+    margin-bottom: 12px
+  &__description
+    max-width: 430px
+    line-height: 22px
+    margin-bottom: 24px
+  &-wrapp
+    display: flex
+    justify-content: space-between
+    margin-bottom: 46px
+  &-block
+    display: flex
+    align-items: center
+    line-height: 22px
+    &__img
+      margin-right: 20px
+    &__subtitle
+      display: block
+      +nunitoBold
+  &__button
+    padding: 7px 34px
+    margin: 0 124px 0 0px
+  &-tabheader
+    flex-grow: 1    
+    &__items
+      display: flex      
+      height: 100%     
+      flex-direction: column        
+    &__item
+      display: flex
+      justify-content: center
+      align-items: center
+      +montserrat
+      font-size: 30px
+      color: $primary-color
+      opacity: 0.3
+      width: 100%
+      height: 100%
+      background: $light-gray
+      &_active
+        opacity: 1
+        background-color: #ffffff
