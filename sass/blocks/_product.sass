@@ -1,0 +1,78 @@
+.product
+  position: relative
+  background-color: #F9FBFF
+  z-index: 2
+  &:after
+    content: ''
+    width: 34%
+    height: 100%
+    background-color: $primary-color
+    position: absolute
+    left: 0
+    top: 0
+    z-index: -1
+  &__subtitle
+    margin-bottom: 72px
+  &-block    
+    max-width: 1365px
+    margin-left: auto        
+  &-cards
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: flex-start
+    &__card
+      display: flex      
+      flex-basis: 559px
+      // margin-bottom: 30px
+  &__image    
+    background-color: #EAEFF5
+    img      
+      display: block
+  &__text    
+    background-color: #ffffff
+    flex-grow: 1    
+  &__price
+    margin: 42px 0 8px 44px
+  &__titlecard
+    margin: 0 0 24px 44px
+  &__description
+    margin: 0 0 18px 44px
+  &__button
+    padding: 5px 20px
+    margin: 0 18px 0 42px
+  &-slider
+    height: 544px
+    z-index: 1
+  &-dimming
+    position: absolute
+    top: 0
+    right: 0
+    z-index: 2
+    width: 95px
+    height: 100%
+    background-color: #EDF0F5
+    opacity: .5
+.swiper-slide
+  height: calc( (100% - 30px ) / 2)
+.swiper-product-button-next
+  display: flex
+  justify-content: center
+  align-items: center
+  height: 48px
+  width: 48px
+  border-radius: 50%
+  background-color: $accent-color
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1)
+  left: auto;
+  right: 66px;
+  position: absolute
+  top: 50%
+  // width: calc(var(--swiper-navigation-size)/ 44 * 27)
+  // height: var(--swiper-navigation-size)
+  margin-top: calc(-1 * var(--swiper-navigation-size)/ 2)
+  z-index: 10
+  cursor: pointer
+  // display: flex
+  // align-items: center
+  // justify-content: center

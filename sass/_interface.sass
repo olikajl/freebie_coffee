@@ -6,7 +6,7 @@ img
   max-width: 100%
   height: auto
 .container
-  width: 1400px
+  max-width: 1400px
   margin: auto
 .section
   padding: 87px 0 128px 0
@@ -22,3 +22,33 @@ img
     font-size: 30px
     color: $primary-color
     text-align: center
+  .card
+    &__price
+      +nunitoBold
+      font-size: 20px
+      color: $accent-color
+    &__title
+      +nunitoBold
+      font-size: 24px
+      color: $text-subtitle
+    &__description
+      font-size: 16px
+      color: $text
+    &__button
+      border-radius: 19px
+      border: none
+      background-color: $accent-color      
+      +nunitoBold
+      font-size: 16px
+      color: $text-btn
+      line-height: 22px
+      text-align: center      
+      &:hover
+        cursor: pointer
+      &:focus
+        outline: none
+    &__link
+      +nunitoBold
+      font-size: 16px
+      color: $primary-color
+      text-decoration: none
