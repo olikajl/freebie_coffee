@@ -29,7 +29,7 @@
             <h1 class="hero-text__title">Your <span>personalized</span> coffee</h1>
           </div>
           <!-- /.hero-text -->
-          <div class="hero-video">
+          <div data-modal class="hero-video">
             <img src="img/hero/btn_play.png" alt="Кнопка запуска видео">
           </div>
           <!-- /.hero-video -->
@@ -637,13 +637,23 @@
   <!-- /.main -->
   <footer class="footer">
     <div class="container">
-      
+      © Revo Coffee Việt Nam - 2018
     </div>
     <!-- /.container -->
   </footer>
   <!-- /.footer -->
+  <div class="modal">
+    <div class="modal-dialog">
+      <button data-close class="modal-dialog__close">&times;</button>
+      <!-- <h4>Всплывающее окно</h4> -->
+      <iframe width="660" height="415" src="https://www.youtube.com/embed/NmCTnxKNTfg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <!-- /.modal__dialog -->
+  </div>
+  <!-- /.modal -->
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="js/script.js"></script>
   <script src="js/tabscript.js"></script>
+  <script src="js/modal.js"></script>
 </body>
 </html>

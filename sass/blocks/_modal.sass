@@ -1,0 +1,34 @@
+.modal
+  display: none
+  position: fixed
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  background-color: rgba(#000, 0.5)
+  z-index: 99999
+  &_active
+    display: flex
+  &_hide
+    display: none
+  &-dialog
+    position: relative
+    max-width: 660px
+    width: 90%
+    min-width: 200px
+    // background-color: #fff
+    margin: auto
+    // padding: 40px
+    &__close
+      display: block
+      position: absolute
+      top: -35px
+      right: -10px
+      font-size: 26px
+      background: none
+      border: none
+      color: $light-gray
+      &:focus
+        outline: none
+      &:hover
+        cursor: pointer

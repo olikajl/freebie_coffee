@@ -151,6 +151,10 @@ img {
   background-size: cover;
 }
 
+.hero-video img:hover {
+  cursor: pointer;
+}
+
 .hero-menu {
   padding: 77px 0 0 57px;
   background-color: #415167;
@@ -605,5 +609,63 @@ img {
   height: 100%;
   background-color: #EDF0F5;
   opacity: .5;
+}
+
+/* Стили для footer */
+.footer {
+  font-size: 16px;
+  color: #415167;
+  text-align: center;
+  background-color: #EDF0F5;
+  padding: 20px 0;
+}
+
+/* Стили для modal */
+.modal {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 99999;
+}
+
+.modal_active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.modal_hide {
+  display: none;
+}
+
+.modal-dialog {
+  position: relative;
+  max-width: 660px;
+  width: 90%;
+  min-width: 200px;
+  margin: auto;
+}
+
+.modal-dialog__close {
+  display: block;
+  position: absolute;
+  top: -35px;
+  right: -10px;
+  font-size: 26px;
+  background: none;
+  border: none;
+  color: #EDF0F5;
+}
+
+.modal-dialog__close:focus {
+  outline: none;
+}
+
+.modal-dialog__close:hover {
+  cursor: pointer;
 }
 /*# sourceMappingURL=slyle.css.map */

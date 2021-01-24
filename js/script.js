@@ -38,3 +38,4 @@ new Swiper('.personal-offer-slider', {
   spaceBetween: 30,
   grabCursor: true,
 });
+
