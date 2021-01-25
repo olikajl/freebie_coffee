@@ -26,6 +26,8 @@
         background-color: $accent-color   
         padding: 0 15px 
         margin-left: -15px
+  &__burger
+    display: none
   &-video
     display: flex
     justify-content: center
@@ -72,3 +74,122 @@
         &:hover
           +nunitoBold
           font-size: 17px
+@media ( max-width: 1200px )
+  .hero
+    &-text
+      &__logo
+        margin: 0 120px 656px 100px
+      &__title
+        left: 108px
+        font-size: 52px
+@media ( max-width: 992px )
+  .hero
+    &-text
+      &__logo
+        margin: 0 60px 636px 80px
+      &__title
+        left: 88px
+        font-size: 40px
+    &-menu    
+      padding: 77px 0 0 37px
+      &__cart
+        margin-bottom: 90px
+@media ( max-width: 768px )
+  .hero
+    &-text
+      &__logo
+        margin: 0 40px 436px 10px
+        max-width: 100px
+      &__title
+        left: 15px
+        top: 360px
+        font-size: 30px
+        line-height: 45px
+        span
+          padding: 0 5px
+          margin-left: -10px
+    &-menu
+      &__cart
+        margin-bottom: 50px
+      &__item-cart
+        font-size: 12px
+      &__link
+        margin-bottom: 20px
+        a          
+          +nunitoBold
+          font-size: 14px
+@media ( max-width: 576px )
+  .lock
+    overflow: hidden
+  .hero
+    &-block
+      flex-direction: column
+    &-text
+      display: flex
+      justify-content: space-between
+      padding-top: 30px
+      &__logo        
+        margin: 0 40px 20px 60px
+      &__title
+        left: 60px
+        top: 260px 
+        color: #fff
+    &-video
+      flex-basis: 350px
+    &-menu
+      position: fixed
+      top: -100%
+      left: 0
+      width: 100%
+      height: 100%
+      text-align: center
+      overflow: auto
+      transition: all 0.3s ease 0s
+      &_active
+        top: 0
+      &__nav
+        margin-top: 150px
+      &__link
+        margin-bottom: 30px
+      &__link a
+        +nunitoLight
+        font-size: 25px
+      &__cart
+        display: none
+    &__burger
+      display: block
+      position: relative
+      width: 30px
+      height: 20px
+      margin: 5px 30px 0 0
+      z-index: 3
+      &:before, &:after
+        content: ''
+        position: absolute
+        left: 0
+        width: 100%
+        height: 2px
+        background-color: $accent-color
+        transition: all 0.3s ease 0s
+      &:before
+        top: 0
+      &:after
+        bottom: 0
+      span
+        position: absolute
+        left: 0
+        top: 9px
+        width: 100%
+        height: 2px
+        background-color: $accent-color
+        transition: all 0.3s ease 0s
+      &_active
+        &:before
+          transform: rotate(45deg)
+          top: 9px
+        &:after
+          transform: rotate(-45deg)
+          bottom: 9px
+        span
+          transform: scale(0)      
+      

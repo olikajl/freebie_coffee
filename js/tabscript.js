@@ -15,7 +15,7 @@ window.addEventListener('DOMContentLoaded', () => {
   }
   
   function showTabCotent(i = 0) {
-    tabsContent[i].style.display = 'block';
+    tabsContent[i].style.display = 'flex';
     tabs[i].classList.add('gift-set-tabheader__item_active');
   }
 

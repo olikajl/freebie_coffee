@@ -26,11 +26,17 @@
               <img src="img/hero/logo.png" alt="Логотип revo" width="124" height="40">
             </div>
             <!-- /.hero-text__logo -->
+            <div class="hero__burger">
+              <span></span>
+            </div>
+            <!-- /.hero__burger -->
             <h1 class="hero-text__title">Your <span>personalized</span> coffee</h1>
           </div>
           <!-- /.hero-text -->
-          <div data-modal class="hero-video">
-            <img src="img/hero/btn_play.png" alt="Кнопка запуска видео">
+          <div class="hero-video">
+            <div class="hero-video__img">
+              <img data-modal src="img/hero/btn_play.png" alt="Кнопка запуска видео">
+            </div>            
           </div>
           <!-- /.hero-video -->
           <div class="hero-menu">
@@ -646,14 +652,16 @@
     <div class="modal-dialog">
       <button data-close class="modal-dialog__close">&times;</button>
       <!-- <h4>Всплывающее окно</h4> -->
-      <iframe width="660" height="415" src="https://www.youtube.com/embed/NmCTnxKNTfg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe id="video-modal" width="660" height="415" src="https://www.youtube.com/embed/NmCTnxKNTfg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
     <!-- /.modal__dialog -->
   </div>
   <!-- /.modal -->
+  <script src="js/jquery-3.5.1.min.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="js/script.js"></script>
   <script src="js/tabscript.js"></script>
   <script src="js/modal.js"></script>
+  <script src="js/burger.js"></script>
 </body>
 </html>
