@@ -76,6 +76,7 @@
       width: 100%
       height: 100%
       background: $light-gray
+      padding: 0 39px 0 36px
       &_active
         opacity: 1
         background-color: #ffffff
@@ -83,3 +84,57 @@
         opacity: 1
         background-color: #ffffff
         cursor: pointer
+@media ( max-width: 1260px )
+  .gift-set
+    &-tabcontainer
+      margin: auto
+    &-tabcontent
+      &:after
+        width: 28%
+@media ( max-width: 1200px )
+  .gift-set
+    &__card
+      align-items: center
+    &__text
+      padding: 17px 68px 0 32px
+    &__img
+      margin-left: 50px
+    &__button
+      margin-bottom: 30px
+@media ( max-width: 992px )
+  .gift-set    
+    &-tabcontent
+      padding: 33px 0 0 0
+    &__text
+      padding: 17px 28px 0 22px
+    &__button
+      margin: 0 54px 30px 0px;
+@media ( max-width: 768px )
+  .gift-set    
+    &-tabcontainer
+      flex-direction: column-reverse      
+    &-tabcontent      
+      &:after
+        display: none
+    &__card
+      flex-direction: column
+      width: 100%
+    &-tabheader
+      &__items
+        flex-direction: row
+      &__item
+        padding: 20px 39px 20px 36px
+    &__img
+      margin: 0   
+@media ( max-width: 480px )
+  .gift-set
+    &-tabheader
+      &__item
+        font-size: 25px
+@media ( max-width: 375px )
+  .gift-set
+    &__button
+      padding: 5px 20px
+      margin: 0 64px 30px 0px
+    &-block
+      font-size: 14px

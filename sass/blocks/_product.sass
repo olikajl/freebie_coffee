@@ -23,8 +23,7 @@
     align-items: flex-start
     &__card
       display: flex      
-      flex-basis: 559px
-      // margin-bottom: 30px
+      flex-basis: 559px      
   &__image    
     background-color: #EAEFF5
     img      
@@ -76,3 +75,100 @@
   // display: flex
   // align-items: center
   // justify-content: center
+@media ( max-width: 1200px )
+  .product
+    &-block    
+      max-width: 1100px
+    &-dimming
+      width: 73px
+    &__image
+      flex-basis: 40%
+    &__price
+      margin: 40px 0 8px 30px
+    &__titlecard
+      margin: 0 0 15px 30px
+    &__description
+      margin: 0 0 25px 30px
+    &__button
+      // padding: 5px 20px
+      margin: 0 18px 0 28px
+    &-slider
+      height: 450px     
+@media ( max-width: 1094px )
+  .product
+    &:after
+      width: 28%
+    &-block    
+      max-width: 1000px
+    &-dimming
+      display: none
+  .swiper-product-button-next
+    right: 56px
+    height: 45px
+    width: 45px
+@media ( max-width: 992px )
+  .product
+    &-slider
+      height: 380px    
+    &-block    
+      max-width: 850px
+    &__price
+      margin: 20px 0 8px 30px
+@media ( max-width: 850px )
+  .product
+    &-block    
+      max-width: 90%
+    &-slider
+      height: 100%
+    &__image
+      flex-basis: 35%
+    &__price
+      margin: 42px 0 8px 44px
+    &__titlecard
+      margin: 0 0 24px 44px
+    &__description
+      margin: 0 0 24px 44px
+    &__button
+      padding: 5px 20px
+      margin: 0 18px 0 44px
+@media ( max-width: 768px )
+  .product
+    &:after
+      width: 20%
+@media ( max-width: 610px )
+  .product
+    &-block    
+      max-width: 95%
+    &__price
+      margin: 22px 0 8px 44px
+    &__titlecard
+      margin: 0 0 24px 44px
+    &__description
+      margin: 0 0 24px 44px
+    &__button
+      padding: 5px 20px
+      margin: 0 18px 0 44px
+  .swiper-product-button-next
+    right: 36px
+@media ( max-width: 610px )
+  .product
+    .swiper-product-button-next
+      right: 0px
+@media ( max-width: 576px )
+  .product
+    &:after
+      display: none
+    &__price
+      font-size: 18px
+      margin: 22px 0 8px 20px
+    &__titlecard
+      margin: 0 0 15px 20px
+    &__description
+      margin: 0 0 24px 20px
+    &__button
+      padding: 5px 10px
+      margin: 0 10px 30px 20px
+    &-cards
+      &__card
+        align-items: center
+        background-color: $light-gray

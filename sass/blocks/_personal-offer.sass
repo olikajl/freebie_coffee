@@ -46,3 +46,26 @@
     height: 100%
     background-color: #EDF0F5
     opacity: .5
+@media ( max-width: 1400px )
+  .personal-offer
+    &-dimming
+      display: none
+  .swiper-product-button-next
+    top: 53%
+    right: 20px
+@media ( max-width: 992px )
+  .personal-offer
+    &:after
+      display: none
+    &-block
+      max-width: 95%
+@media ( max-width: 645px )
+  .personal-offer
+    &__price
+      margin: 42px 0 8px 20px
+    &__description
+      margin: 0 20px 32px 20px
+    &__titlecard
+      margin: 0 0 24px 20px
+    &__button      
+      margin: 0 18px 0 20px
