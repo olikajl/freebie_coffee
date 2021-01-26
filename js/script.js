@@ -12,6 +12,7 @@ new Swiper('.product-slider', {
     sensitivity: 1,
     eventsTarget: '.product-slider'
   },
+  edgeSwipeThreshold: 20,  
   // slidesPerView: 2.2,
   slidesPerGroup: 2,
   speed: 800,
@@ -75,3 +76,48 @@ new Swiper('.personal-offer-slider', {
   }
 });
 
+const animItems = document.querySelectorAll('._animation');
+
+// Проверяем есть ли такие объекты с классом _animation
+if (animItems.length > 0) {
+  window.addEventListener('scroll', animOnScroll); // Добавляем событие при скроле
+  // Создаем запуск анимации при скроле
+  function animOnScroll() {
+    for (let i = 0; i < animItems.length; i++) {
+      const animItem = animItems[i], // Получаем элемент
+            animItemHeight = animItem.offsetHeight, // Получаем высоту объекта
+            animItemOffset = offset(animItem).top, // Получаем позицию объекта относительно top
+            animStart = 4; // Коэффициент регулирующий запуск анимации
+
+      let animItemPoint = window.innerHeight - animItemHeight / animStart; // Настройка начала анимации 
+
+      // Делаем проверку усли высота объекта выше чем высота окна
+      if (animItemHeight > window.innerHeight) {
+        animItemPoint = window.innerHeight - window.innerHeight / animStart;
+      }
+
+      // Добавление класса к объекту в нужный момент именно, когда мы доскроливаем до него            
+      if (pageYOffset > (animItemOffset - animItemPoint) && pageYOffset < (animItemOffset + animItemHeight)) {
+        animItem.classList.add('_active');
+      } else {
+        // Реализовываем возможность повторна не показывать анимацию
+        if (!animItem.classList.contains('_anim-no-hide')) {
+          animItem.classList.remove('_active');
+        }        
+      }
+    }
+  }
+  // Функция коректно вычисляет позицию объекта
+  function offset(el) {
+    const rect = el.getBoundingClientRect(),
+          scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+          scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
+  }
+  
+  animOnScroll();
+  //Вызываем функцию с небольшой задержкой
+  // setTimeout(() => {
+  //   animOnScroll();
+  // }, 300);  
+}

@@ -5,21 +5,40 @@
   &-blocks
     display: flex
     justify-content: space-around
-    flex-wrap: wrap
+    flex-wrap: wrap        
     &__block
       text-align: center
+    ._active
+      .advantages-blocks__img
+        transform: scale(1)
+      .advantages-blocks__title
+        transform: translate(0px, 0px)
+        opacity: 1
+        transition: all 0.8s ease 0.6s
+      .advantages-blocks__text  
+        transform: translate(0px, 0px)
+        opacity: 1
+        transition: all 0.8s ease 0.6s  
     &__img
       margin-bottom: 44px
+      transform: scale(0)
+      transition: all 0.8s ease 0s
     &__title
       +nunitoBold
       font-size: 24px
       color: $text-subtitle
       margin-bottom: 12px
+      transform: translate(0px, 50%)
+      opacity: 0
+      transition: all 0.3s ease 0s
     &__text
       font-size: 16px
       color: $text
       line-height: 22px
       max-width: 226px
+      transform: translate(0px, 50%)
+      opacity: 0
+      transition: all 0.3s ease 0s
 @media ( max-width: 992px )
   .advantages
     &-blocks

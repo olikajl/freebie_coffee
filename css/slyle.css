@@ -7,6 +7,7 @@
 body {
   font-family: 'Nunito', sans-serif;
   font-weight: 300;
+  height: 100%;
 }
 
 img {
@@ -496,8 +497,33 @@ img {
   text-align: center;
 }
 
+.advantages-blocks ._active .advantages-blocks__img {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.advantages-blocks ._active .advantages-blocks__title {
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+  opacity: 1;
+  -webkit-transition: all 0.8s ease 0.6s;
+  transition: all 0.8s ease 0.6s;
+}
+
+.advantages-blocks ._active .advantages-blocks__text {
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+  opacity: 1;
+  -webkit-transition: all 0.8s ease 0.6s;
+  transition: all 0.8s ease 0.6s;
+}
+
 .advantages-blocks__img {
   margin-bottom: 44px;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
 }
 
 .advantages-blocks__title {
@@ -506,6 +532,11 @@ img {
   font-size: 24px;
   color: #232C38;
   margin-bottom: 12px;
+  -webkit-transform: translate(0px, 50%);
+          transform: translate(0px, 50%);
+  opacity: 0;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 .advantages-blocks__text {
@@ -513,6 +544,11 @@ img {
   color: #151D28;
   line-height: 22px;
   max-width: 226px;
+  -webkit-transform: translate(0px, 50%);
+          transform: translate(0px, 50%);
+  opacity: 0;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 @media (max-width: 992px) {
@@ -581,6 +617,11 @@ img {
   display: flex;
   -ms-flex-preferred-size: 559px;
       flex-basis: 559px;
+}
+
+.product-cards__card:hover {
+  -webkit-box-shadow: 0px 4px 24px rgba(205, 205, 205, 0.5);
+          box-shadow: 0px 4px 24px rgba(205, 205, 205, 0.5);
 }
 
 .product__image {
@@ -1075,6 +1116,11 @@ img {
 .personal-offer__card {
   max-width: 360px;
   background-color: #ffffff;
+}
+
+.personal-offer__card:hover {
+  -webkit-box-shadow: 0px 4px 24px rgba(205, 205, 205, 0.5);
+          box-shadow: 0px 4px 24px rgba(205, 205, 205, 0.5);
 }
 
 .personal-offer__image {
